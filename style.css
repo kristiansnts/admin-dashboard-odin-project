@@ -1,0 +1,52 @@
+:root {
+    --primary: #00509d;
+    --secondary: #fdc500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.4);
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+.nav div > img {
+    width: 30px;
+}
+
+.nav div > input {
+    border-radius: 8px;
+    padding: 5px 20px;
+}
+
+.action-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.action-menu .btn {
+    color: white;
+    background-color: var(--primary);
+    /* padding: 10px 15px; */
+    text-align: center;
+    line-height: 28px;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+}
