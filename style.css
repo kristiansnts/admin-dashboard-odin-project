@@ -20,12 +20,16 @@ ul, li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Layout & Utils */
 
 body {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 300px 4fr;
     grid-template-rows: .5fr 1fr;
 }
 
@@ -92,8 +96,89 @@ nav {
     cursor: pointer;
 }
 
+#sidenav ul li:hover {
+    background-color: #eab308;
+    border-radius: 10px;
+}
+
 #sidenav ul li .iconify {
     margin-right: 10px;
+}
+
+/* Header */
+header {
+    padding: 15px 20px;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.4);
+}
+
+header .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .main-nav .search {
+    display: flex;
+    align-items: center;
+}
+
+header .main-nav .search input {
+    width: 40vw;
+    padding: 5px 15px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 8px;
+}
+
+header .main-nav .profile {
+    display: flex;
+    align-items: center;
+}
+
+header .main-nav .profile .user {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .user-avatar {
+    color: var(--secondary);
+}
+
+header .main-nav .iconify {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+header .welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .welcome .profile-menu {
+    display: flex;
+    align-items: center;
+}
+
+header .welcome .user-avatar {
+    font-size: 5rem;
+    margin-right: 15px;
+}
+
+header .welcome .welcome-text h1 {font-size: 1.5rem;}
+
+header .welcome .action-menu .cta-btn{
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    margin-right: 10px;
+    background-color: var(--primary);
+    color: white;
 }
 
 /* Responsive navbar trigger */

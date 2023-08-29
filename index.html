@@ -10,28 +10,33 @@
 <body>
     
     <header>
-        <a href="" class="hamburger-menu"><span class="iconify" data-icon="ci:hamburger-md"></span></a>
-        <div class="search">
-            <span class="iconify" data-icon="mdi:magnify"></span>
-            <input type="text">
-        </div>
-        <div class="profile">
-            <span class="iconify" data-icon="ic:outline-notifications-active"></span>
-            <span class="iconify" data-icon="iconamoon:profile-circle-fill"></span>
+        <div class="main-nav">
+            <a href="" class="hamburger-menu active"><span class="iconify" data-icon="ci:hamburger-md"></span></a>
+            <div class="search">
+                <span class="iconify" data-icon="mdi:magnify"></span>
+                <input type="text">
+            </div>
+            <div class="profile">
+                <span class="iconify" data-icon="ic:outline-notifications-active"></span>
+                <div class="user">
+                    <span class="iconify user-avatar" data-icon="iconamoon:profile-circle-fill"></span>
+                    <p class="username">Morgan Oakley</p>
+                </div>
+                </div>
         </div>
         <div class="welcome">
             <div class="profile-menu">
-                <span class="iconify" data-icon="iconamoon:profile-circle-fill"></span>
+                <span class="iconify user-avatar" data-icon="iconamoon:profile-circle-fill"></span>
                 <div class="welcome-text">
                     <span>Hi there,</span>
                     <h1>Morgan Oakley (@morgan)</h1>
                 </div>
             </div>
-            <div class="action-menu">
-                <a href="">New</a>
-                <a href="">Upload</a>
-                <a href="">Share</a>
-            </div>
+            <form action="" class="action-menu">
+                <button class="cta-btn">New</button>
+                <button class="cta-btn">Upload</button>
+                <button class="cta-btn">Share</button>
+            </form>
         </div>
     </header>
     <nav id="sidenav">
