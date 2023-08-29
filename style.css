@@ -44,7 +44,7 @@ nav {
 .container {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr .4fr;
     grid-template-rows: 1fr 1fr;
     gap: 50px;
 }
@@ -53,16 +53,28 @@ nav {
     grid-row: 1 / 3;
 }
 
+.container .announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.container .trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
 .projects .all-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 500px);
     grid-auto-rows: 250px;
+    gap: 40px;
 }
 
 /* ==== Sidenav ==== */
 #sidenav {
     background-color: var(--primary);
     color: white;
+    position: sticky;
 }
 
 #sidenav .logo {
@@ -179,7 +191,7 @@ header .welcome .action-menu .cta-btn{
     padding: 30px 20px;
 }
 
-.container .projects h2 {
+.container .leading{
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -221,6 +233,31 @@ header .welcome .action-menu .cta-btn{
 
 .card-project .card-cta li {
     cursor: pointer;
+}
+
+/* Announcements */
+.card-announcement {
+    width: 70%;
+    padding: 30px 40px;
+    margin-top: 10px;
+}
+
+.card-announcement .announcement-item {
+    padding: 20px 0;
+}
+
+.card-announcement .announcement-item h1 {
+    font-size: 1.2rem;
+}
+
+.card-announcement .announcement-item p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.announcement-item:nth-child(2) {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 /* Responsive navbar trigger */
