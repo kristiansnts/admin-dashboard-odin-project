@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Variable */
+/* ==== Variable ==== */
 
 :root {
     --primary: #3b82f6;
     --secondary: #eab308;
 }
 
-/* Reset */
+/* ==== Reset ==== */
 
 * {
     margin: 0;
@@ -24,13 +24,13 @@ a {
     text-decoration: none;
 }
 
-/* Layout & Utils */
+/* ==== Layout & Utils ==== */
 
 body {
     display: grid;
     height: 100vh;
     grid-template-columns: 300px 4fr;
-    grid-template-rows: .5fr 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
 header {
@@ -44,7 +44,7 @@ nav {
 .container {
     display: grid;
     width: 100%;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 400px;
     grid-template-rows: 1fr 1fr;
     gap: 50px;
 }
@@ -56,18 +56,10 @@ nav {
 .projects .all-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 300px;
+    grid-auto-rows: 250px;
 }
 
-.card-project .card-cta {
-    display: flex;
-}
-
-.card-project .card-cta > * {
-    margin-right: 15px;
-}
-
-/* Sidenav */
+/* ==== Sidenav ==== */
 #sidenav {
     background-color: var(--primary);
     color: white;
@@ -105,7 +97,7 @@ nav {
     margin-right: 10px;
 }
 
-/* Header */
+/* ==== Header ==== */
 header {
     padding: 15px 20px;
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.4);
@@ -179,6 +171,56 @@ header .welcome .action-menu .cta-btn{
     margin-right: 10px;
     background-color: var(--primary);
     color: white;
+}
+
+/* ==== Main Content ==== */
+/* content */
+.container {
+    padding: 30px 20px;
+}
+
+.container .projects h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.container .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 3px 1px 8px 1px rgba(0,0,0,0.3);
+}
+
+.container .projects .card-project {
+    border-left: 6px solid var(--secondary);
+    padding: 30px 20px;
+    margin: 10px 20px 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .projects .card-project h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.container .projects .card-project p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.card-project .card-cta {
+    position: absolute;
+    display: flex;
+    right: 20px;
+}
+
+.card-project .card-cta > * {
+    margin-right: 15px;
+}
+
+.card-project .card-cta li {
+    cursor: pointer;
 }
 
 /* Responsive navbar trigger */
